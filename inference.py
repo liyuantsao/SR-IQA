@@ -37,10 +37,10 @@ def main():
     if args.save_file:
         # mkdir
         sub_path = os.path.dirname(args.save_file)
-        save_dir = os.path.join('/home/yuan0520/Warehouse/My-IQA/results', sub_path)
+        save_dir = os.path.join('path/to/results', sub_path)
         os.makedirs(save_dir, exist_ok=True)
 
-        sf = open(os.path.join('/home/yuan0520/Warehouse/My-IQA/results', sub_path, args.save_file.split('/')[-1]), 'w', newline='')
+        sf = open(os.path.join('path/to/results', sub_path, args.save_file.split('/')[-1]), 'w', newline='')
         sfwriter = csv.writer(sf)
 
     avg_scores = {metric_name: 0 for metric_name in args.metric_names}

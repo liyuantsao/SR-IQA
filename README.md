@@ -16,5 +16,5 @@ python setup.py develop
 pyiqa -ls
 
 # test with arbitrary number of metrics
-python my_inference.py --input [image_path or dir] --ref [image_path or dir] --save_file results/EXP_NAME -m psnr ssim lpips musiq maniqa clipiqa
+python inference.py --input [your image_path or dir] --ref [ground truth image_path or dir] --save_file results/EXP_NAME -m psnr ssim lpips musiq maniqa clipiqa
 ```
